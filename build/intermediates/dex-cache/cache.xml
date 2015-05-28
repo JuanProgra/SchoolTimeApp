@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-ebb3e6a6509aab257406a812689ff33d4dbf8673.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\it.neokree\MaterialTabs\0.11\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fef6aa7ea0bb2d6adf10965d0a5bb8e353517bff">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-358c0c4ab0c1fb21a3e4eed1052d336bad3275f6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.pkmmte.view\circularimageview\1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-f183afd6323cb8a4b043d509939bae1503554184.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c9e0c6fc22b22b96d0db564cf073ab6f288bb758">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-e4270b2048c8b960ecae85aedf9b9a5d6a3ff1f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-349904afc1ad43f33d560a4cbccad652f7a7decc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-911a960a8b39a07d4e6aae0f21e39ed7d2ee51ab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-4afda7e0bf722e0053197f364cab475514cd1352.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.telly\mrvector\0.2.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e9cd6fddebfe1293fe1bf4c0c6b1ac27a8d91a0">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-4030c7b5e023334b8f66fd70f947f548e416bce4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\me.tatarka.support\jobscheduler\0.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8d5fa4ca32cbbd491d4e027d16f02e897dfed0f2">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-90b1238622fceb83ffe15251fe4ea3dd330aa815.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\org.lucasr.dspec\dspec\0.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dab41681007f3d86a532a5d90295cc6feb9e258b">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-b4a17c63785bd6073b75e8ee9c7368b72c4762d4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-23fa70eb30a6af9cea00d234071cd3c65e86b985.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-c5485a322a34c15e44d43cc88935e844405228f8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-e9e4f71e49d32e478edde5bb17b86bceebbb20a6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\library-2.4.0-f542370b8160acb6bfd07b094458352dfb30c9ec.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\jp.wasabeef\recyclerview-animators\1.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee2417303712f2959fc9d726c67881daaf3c054">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-1ec53e66c414400c08de13c5d61ba01482f6a42a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\classes-6a340752c1d2d4ba5ca32a0df9994bb123b053c3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.16\d8f5b9114ebe0f76de7fbf55e950540959ce4ff8\library-1.0.16.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d8f5b9114ebe0f76de7fbf55e950540959ce4ff8">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\library-1.0.16-453c4c61c29412ff804b42d66613d04e6e70ce63.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-27af1afee6443e6638d6a5db88e0d3e1be64064d.jar" />
+    </item>
+
+</items>
