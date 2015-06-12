@@ -8,6 +8,7 @@ public class Horario {
     public String Materia;
     public String Profesor;
     public String Hora;
+    public String Dia;
 
     public String getHora() {
         return Hora;
@@ -39,5 +40,13 @@ public class Horario {
 
     public void setProfesor(String profesor) {
         Profesor = profesor;
+    }
+
+    public String getDia() {
+        return Dia;
+    }
+
+    public void setDia(String dia) {
+        Dia = dia;
     }
 }

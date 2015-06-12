@@ -14,51 +14,16 @@
             android:id="@+id/app_bar"
             layout="@layout/app_bar" />
 
-
-        <LinearLayout
-            android:visibility="invisible"
-            android:id="@+id/LinearNotifi"
-            android:layout_below="@+id/app_bar"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/ContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:visibility="invisible"
-            android:id="@+id/LinearTarea"
-            android:layout_below="@+id/app_bar"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
 
-        </LinearLayout>
-        <LinearLayout
-            android:visibility="invisible"
-            android:id="@+id/LinearHorario"
-            android:layout_below="@+id/app_bar"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        </RelativeLayout>
 
-            <DatePicker
-                android:id="@+id/pickerdate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:calendarViewShown="true"
-                android:spinnersShown="false" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/colorAccent" />
-
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/listViewT"/>
-        </LinearLayout>
 
 
     </RelativeLayout>

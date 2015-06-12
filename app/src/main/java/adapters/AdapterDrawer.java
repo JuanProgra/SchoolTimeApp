@@ -1,6 +1,8 @@
 package adapters;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,10 +10,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import BaseDatos.BDD_sqlite;
+import Beans.Horario;
 import Beans.Information;
+import Beans.Usuario;
 import gt.com.kinal.juanlopez.schooltime.R;
 
 /**
@@ -19,6 +25,10 @@ import gt.com.kinal.juanlopez.schooltime.R;
  */
 public class AdapterDrawer extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     List<Information> data= Collections.emptyList();
+
+    private TextView usuario;
+    private TextView nombre;
+
     private static final int TYPE_HEADER=0;
     private static final int TYPE_ITEM=1;
     private LayoutInflater inflater;
@@ -37,7 +47,11 @@ public class AdapterDrawer extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if(viewType==TYPE_HEADER){
             View view=inflater.inflate(R.layout.drawer_header, parent,false);
+            usuario = (TextView)view.findViewById(R.id.textUsuario);
+            nombre = (TextView)view.findViewById(R.id.textNombre);
+            llenarLista();
             HeaderHolder holder=new HeaderHolder(view);
+
             return holder;
         }
         else{
@@ -46,6 +60,33 @@ public class AdapterDrawer extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             return holder;
         }
 
+    }
+    public void llenarLista() {
+        BDD_sqlite usdbh = new BDD_sqlite(this.context);
+        SQLiteDatabase db = usdbh.getWritableDatabase();
+
+        usdbh = new BDD_sqlite(this.context);
+        db = usdbh.getReadableDatabase();
+
+        String Sql = "SELECT * FROM USUARIO";
+
+        Cursor cc = db.rawQuery(Sql, null);
+        Usuario obj;
+        ArrayList<Usuario> listaUsuario = new ArrayList<>();
+        if (cc.moveToFirst()) {
+            do {
+                obj = new Usuario();
+                obj.setNombre(cc.getString(0));
+                obj.setUsuario(cc.getString(1));
+                listaUsuario.add(obj);
+            } while (cc.moveToNext());
+        }
+        if (listaUsuario.size() > 0){
+            for (int x = 0 ; x < listaUsuario.size(); x++){
+                usuario.setText(listaUsuario.get(x).getUsuario().toString());
+                nombre.setText(listaUsuario.get(x).getNombre().toString());
+            }
+        }
     }
 
     @Override

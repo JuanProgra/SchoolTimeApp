@@ -1,10 +1,16 @@
 package gt.com.kinal.juanlopez.schooltime.Activitys;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -21,14 +27,22 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import BaseDatos.BDD_sqlite;
 import Beans.Horario;
+import Beans.Usuario;
+import Sincro.cls_sincro;
+import fragment.HorarioFragment;
 import fragment.NavigationDrawerFragment;
+import fragment.NotificacionFragment;
+import fragment.TareasFragment;
 import gt.com.kinal.juanlopez.schooltime.R;
 
 
@@ -37,12 +51,15 @@ public class Activity_Menu extends ActionBarActivity {
     private ViewPager mPager;
     private NavigationDrawerFragment mDrawerFragment;
     private LinearLayout linearNotifi,linerarTare,linearHora;
+    private String resultado_proceso;
 
     public SQLiteDatabase db;
     public BDD_sqlite sqlite;
 
-    public HorarioAdapter adapter;
+    String Usuario;
+
     public ListView listView;
+    private SimpleDateFormat dateFormat;
 
     ArrayList<Horario> listaHorario = new ArrayList<Horario>();
     ArrayList<Horario> listBackupDatas = new ArrayList<Horario>();
@@ -52,11 +69,7 @@ public class Activity_Menu extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity__menu);
 
-        linearNotifi = (LinearLayout)findViewById(R.id.LinearNotifi);
-        linerarTare = (LinearLayout)findViewById(R.id.LinearTarea);
-        linearHora = (LinearLayout)findViewById(R.id.LinearHorario);
-        listView = (ListView)findViewById(R.id.listViewT);
-
+        llenarLista();
         setupDrawer();
 
     }
@@ -69,27 +82,145 @@ public class Activity_Menu extends ActionBarActivity {
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         mDrawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout)findViewById(R.id.drawer_layout), mToolbar);
     }
+    public void llenarLista() {
+        BDD_sqlite usdbh = new BDD_sqlite(getBaseContext());
+        SQLiteDatabase db = usdbh.getWritableDatabase();
+
+        usdbh = new BDD_sqlite(getBaseContext());
+        db = usdbh.getReadableDatabase();
+
+        String Sql = "SELECT * FROM USUARIO";
+
+        Cursor cc = db.rawQuery(Sql, null);
+        Usuario obj;
+        ArrayList<Usuario> listaUsuario = new ArrayList<>();
+        if (cc.moveToFirst()) {
+            do {
+                obj = new Usuario();
+                obj.setNombre(cc.getString(0));
+                obj.setUsuario(cc.getString(1));
+                listaUsuario.add(obj);
+            } while (cc.moveToNext());
+        }
+        if (listaUsuario.size() > 0){
+            for (int x = 0 ; x < listaUsuario.size(); x++){
+                Usuario = listaUsuario.get(x).getUsuario().toString();
+                new DownloadTask().execute("Tarea");
+            }
+        }
+    }
+    public void Messagebox(String mensaje) {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("Horario");
+
+        builder.setMessage(mensaje);
+
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.show();
+    }
+
+    @SuppressLint("SimpleDateFormat") public String fechaActual()
+    {
+        dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String nodocto = dateFormat.format(new Date());
+        return nodocto;
+    }
+
+    private class DownloadTask extends AsyncTask<Object, Object, Object> {
+        protected void onPostExecute(Object result) {
+
+
+            if (resultado_proceso.equals("1")) {
+
+            } else {
+
+                String invalido = resultado_proceso;
+                new DownloadTask1().execute("Tarea");
+                Messagebox("-" + invalido);
+            }
+
+        }
+
+        @Override
+        protected Object doInBackground(Object... params) {
+            cls_sincro sincronizacion = new cls_sincro();
+
+            resultado_proceso = sincronizacion.GetCodigo(Usuario);
+
+            if (resultado_proceso.substring(0, 1).equals("1")) {
+                resultado_proceso = "1";
+            } else {
+            }
+            return null;
+        }
+    }
+    private class DownloadTask1 extends AsyncTask<Object, Object, Object> {
+        protected void onPostExecute(Object result) {
+
+
+            if (resultado_proceso.equals("1")) {
+
+            } else {
+                String invalido = resultado_proceso;
+                Messagebox("-" + invalido);
+            }
+
+        }
+
+        @Override
+        protected Object doInBackground(Object... params) {
+            cls_sincro sincronizacion = new cls_sincro();
+
+            resultado_proceso = sincronizacion.GetHorario(getApplicationContext(), resultado_proceso, fechaActual());
+
+            if (resultado_proceso.substring(0, 1).equals("1")) {
+                resultado_proceso = "1";
+            } else {
+                String invalido = "No hay horario";
+                resultado_proceso = invalido + " " + resultado_proceso;
+            }
+            return null;
+        }
+    }
 
     public void Nav(int index){
+        Fragment fragment = null;
+        String title = getString(R.string.app_name);
+
         switch (index){
             case 0:
-                linearNotifi.setVisibility(View.VISIBLE);
-                linerarTare.setVisibility(View.INVISIBLE);
-                linearHora.setVisibility(View.INVISIBLE);
+                fragment = new NotificacionFragment();
+                title = "Notificaciones";
                 break;
             case 1:
-                linearNotifi.setVisibility(View.INVISIBLE);
-                linerarTare.setVisibility(View.VISIBLE);
-                linearHora.setVisibility(View.INVISIBLE);
+                fragment = new TareasFragment();
+                title = "Tareas";
                 break;
             case 2:
-                linearNotifi.setVisibility(View.INVISIBLE);
-                linerarTare.setVisibility(View.INVISIBLE);
-                linearHora.setVisibility(View.VISIBLE);
+                fragment = new HorarioFragment();
+                title = "Horarios";
                 break;
 
         }
+        if (fragment != null) {
+            ((RelativeLayout) findViewById(R.id.ContainerLayout)).removeAllViewsInLayout();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.ContainerLayout, fragment);
+            fragmentTransaction.commit();
+            getSupportActionBar().setTitle(title);
+        }
     }
+
     public void onDrawerItemClicked(int index) {
         switch (index) {
             case 0:
@@ -99,8 +230,6 @@ public class Activity_Menu extends ActionBarActivity {
                 Nav(1);
                 break;
             case 2:
-                llenarHorario();
-                llenarLista();
                 Nav(2);
                 break;
         }
@@ -127,207 +256,5 @@ public class Activity_Menu extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void llenarHorario() {
-        try {
-            sqlite = new BDD_sqlite(getBaseContext());
-            db = sqlite.getReadableDatabase();
-
-            ContentValues horarioConte = new ContentValues();
-
-            String sql1 = "DELETE FROM HORARIO";
-            db.execSQL(sql1);
-            db.close();
-
-            db = sqlite.getReadableDatabase();
-
-            horarioConte.put("HORA", "12:40");
-            horarioConte.put("SALON", "C-39");
-            horarioConte.put("MATERIA", "Matematicas");
-            horarioConte.put("PROFESOR", "Jose Francisco Noj");
-
-            db.insert("HORARIO", null, horarioConte);
-            db.close();
-
-            db = sqlite.getReadableDatabase();
-
-            horarioConte.put("HORA", "13:15");
-            horarioConte.put("SALON", "C-35");
-            horarioConte.put("MATERIA", "Lenguaje");
-            horarioConte.put("PROFESOR", "Alexander Mayen");
-
-            db.insert("HORARIO", null, horarioConte);
-            db.close();
-
-            db = sqlite.getReadableDatabase();
-
-            horarioConte.put("HORA", "13:50");
-            horarioConte.put("SALON", "C-22");
-            horarioConte.put("MATERIA", "Idioma Ingles");
-            horarioConte.put("PROFESOR", "Junior Flores");
-
-            db.insert("HORARIO", null, horarioConte);
-            db.close();
-
-            db = sqlite.getReadableDatabase();
-
-            horarioConte.put("HORA", "14:25");
-            horarioConte.put("SALON", "C-38");
-            horarioConte.put("MATERIA", "Estadistica");
-            horarioConte.put("PROFESOR", "Jose Francisco Noj");
-
-            db.insert("HORARIO", null, horarioConte);
-            db.close();
-        } catch (SQLException e) {
-            db.close();
-            String message = e.toString();
-            Toast.makeText(this, "0)" + message, Toast.LENGTH_LONG).show();
-        }
-
-    }
-    public void llenarLista() {
-        listaHorario.clear();
-        listBackupDatas.clear();
-
-        sqlite = new BDD_sqlite(getBaseContext());
-        db = sqlite.getReadableDatabase();
-
-        String Sql = "SELECT * FROM HORARIO";
-
-        Cursor cc = db.rawQuery(Sql, null);
-        Horario obj;
-
-        if (cc.moveToFirst()) {
-            do {
-                obj = new Horario();
-                obj.setHora(cc.getString(0));
-                obj.setSalon(cc.getString(1));
-                obj.setMateria(cc.getString(2));
-                obj.setProfesor(cc.getString(3));
-
-
-                listaHorario.add(obj);
-                listBackupDatas.add(obj);
-
-            } while (cc.moveToNext());
-        }
-        adapter = new HorarioAdapter();
-        listView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-    }
-
-
-    private class HorarioAdapter extends BaseAdapter implements
-            Filterable {
-        private HorarioFilter horarioFilter;
-
-        @Override
-        public int getCount() {
-            return listaHorario.size();
-        }
-
-        @Override
-        public Filter getFilter() {
-            if (horarioFilter == null)
-                horarioFilter = new HorarioFilter();
-            return horarioFilter;
-        }
-
-        @Override
-        public Horario getItem(int position) {
-            return listaHorario.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            PlayerViewHolder holder;
-            if (convertView == null) {
-                convertView = LayoutInflater.from(
-                        getApplicationContext()).inflate(
-                        R.layout.item_horario, null);
-                holder = new PlayerViewHolder();
-
-                holder.Materia = (TextView) convertView.findViewById(R.id.textMateria);
-                holder.Salon = (TextView) convertView.findViewById(R.id.textSalon);
-                holder.Profesor = (TextView) convertView.findViewById(R.id.textProfesor);
-                holder.Hora = (TextView) convertView.findViewById(R.id.textHora);
-                holder.thumb = (ImageView) convertView.findViewById(R.id.imageView);
-
-                convertView.setTag(holder);
-            } else {
-                holder = (PlayerViewHolder) convertView.getTag();
-            }
-            holder.Materia.setTextColor(R.color.colorSecondaryText);
-            holder.Materia.setText(getItem(position).Materia);
-            holder.Profesor.setText(getItem(position).Profesor);
-            holder.Profesor.setTextColor(R.color.colorSecondaryText);
-            holder.Salon.setText(getItem(position).Salon);
-            holder.Salon.setTextColor(R.color.colorSecondaryText);
-            holder.Hora.setText(getItem(position).Hora);
-            holder.Hora.setTextColor(R.color.colorSecondaryText);
-
-            return convertView;
-        }
-
-    }
-
-    private class HorarioFilter extends Filter {
-        @SuppressLint("DefaultLocale")
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint) {
-            FilterResults results = new FilterResults();
-            // 	We implement here the filter logic
-            ArrayList<Horario> filters = new ArrayList<Horario>();
-            if (constraint == null || constraint.length() == 0) {
-                // 	No filter implemented we return all the list
-                for (Horario player : listBackupDatas) {
-                    filters.add(player);
-                }
-                results.values = filters;
-                results.count = filters.size();
-            } else {
-                //We perform filtering operation
-                for (Horario row : listBackupDatas) {
-                    if (row.Materia.toUpperCase().startsWith(
-                            constraint.toString().toUpperCase())) {
-                        filters.add(row);
-                    }
-                }
-                results.values = filters;
-                results.count = filters.size();
-            }
-            return results;
-        }
-
-        @Override
-        protected void publishResults(CharSequence constraint,
-                                      FilterResults results) {
-            if (results.count == 0) {
-                listaHorario.clear();
-                adapter.notifyDataSetInvalidated();
-            } else {
-                listaHorario.clear();
-                @SuppressWarnings("unchecked")
-                ArrayList<Horario> resultList = (ArrayList<Horario>) results.values;
-                for (Horario row : resultList) {
-                    listaHorario.add(row);
-                    adapter.notifyDataSetChanged();
-                }
-                adapter.notifyDataSetChanged();
-            }
-        }
-    }
-
-    private static class PlayerViewHolder {
-        public ImageView thumb;
-        public TextView Salon;
-        public TextView Profesor;
-        public TextView Materia;
-        public TextView Hora;
     }
 }
