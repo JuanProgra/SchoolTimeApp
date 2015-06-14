@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="AppTheme.Base">
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:colorAccent">@color/colorAccent</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:colorControlHighlight">@color/colorAccent</item>
-        <item name="android:windowContentTransitions">true</item>
-        <item name="android:windowTransitionBackgroundFadeDuration">5000</item>
-        <item name="android:colorButtonNormal">@color/colorPrimary</item>
-        <item name="android:colorControlActivated">@color/colorPrimaryDark</item>
+
+    <style name="MyTheme" parent="Base.MyTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="MyTheme.Detail" parent="MyTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MySpinnerStyle" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:overlapAnchor">true</item>
     </style>
 </resources>

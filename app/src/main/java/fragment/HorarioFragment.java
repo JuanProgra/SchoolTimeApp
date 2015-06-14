@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,11 +52,7 @@ public class HorarioFragment extends Fragment {
     public HorarioAdapter adapter;
     public ListView listView;
 
-
     private String resultado_proceso;
-    public ProgressDialog pd = null;
-    private int mYear, mMonth, mDay;
-    private SimpleDateFormat dateFormat;
 
     ArrayList<Horario> listaHorario = new ArrayList<Horario>();
     ArrayList<Horario> listBackupDatas = new ArrayList<Horario>();
@@ -69,47 +66,10 @@ public class HorarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_horario, container, false);
 
-        button = (Button) view.findViewById(R.id.btnDia);
-        text = (TextView) view.findViewById(R.id.textView5);
-
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showDate();
-            }
-        });
-
-        //this.pd = ProgressDialog.show(this, "Cargando horario", "Espere por favor", true, false);
-
-        //new DownloadTask().execute("Tarea");
+        TabLayout tabLayout = (TabLayout)view.findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
         return view;
-    }
-
-    private void showDate() {
-        // Process to get Current Date
-        final Calendar c = Calendar.getInstance();
-        mYear = c.get(Calendar.YEAR);
-        mMonth = c.get(Calendar.MONTH);
-        mDay = c.get(Calendar.DAY_OF_MONTH);
-
-        // Launch Date Picker Dialog
-        DatePickerDialog dpd = new DatePickerDialog(getActivity(),
-                new DatePickerDialog.OnDateSetListener() {
-
-                    @Override
-                    public void onDateSet(DatePicker view, int year,
-                                          int monthOfYear, int dayOfMonth) {
-                        // Display Selected date in textbox
-                        //fecha = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
-
-                        fecha = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
-                        text.setText(fecha);
-
-                    }
-                }, mYear, mMonth, mDay);
-        dpd.show();
     }
 
     public void llenarLista() {
@@ -257,31 +217,4 @@ public class HorarioFragment extends Fragment {
         public TextView Materia;
         public TextView Hora;
     }
-
-    public void showDatePickerDialog(View v) {
-        DialogFragment newFragment = new DialogFragment();
-        newFragment.show(getActivity().getFragmentManager(), "datePicker");
-    }
-
-    public void Messagebox(String mensaje) {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
-        builder.setTitle("Horario");
-
-        builder.setMessage(mensaje);
-
-        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        builder.show();
-    }
-
-
-
-
 }

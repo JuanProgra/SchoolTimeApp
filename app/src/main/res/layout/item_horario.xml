@@ -21,28 +21,22 @@
             android:layout_height="wrap_content"
             android:text="Horario"
             android:id="@+id/textView4"
-            android:textColor="@color/colorPrimaryText" />
+            android:textColor="#689F38" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Materia"
             android:id="@+id/textView"
-            android:textColor="@color/colorPrimaryText" />
+            android:textColor="#689F38" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Salon"
             android:id="@+id/textView2"
-            android:textColor="@color/colorPrimaryText" />
+            android:textColor="#689F38" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profesor"
-            android:id="@+id/textView3"
-            android:textColor="@color/colorPrimaryText" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,25 +49,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textHora"
-            android:textColor="@color/colorSecondaryText" />
+            android:id="@+id/textHora" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textMateria"
-            android:textColor="@color/colorSecondaryText" />
+            android:id="@+id/textMateria" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textSalon"
-            android:textColor="@color/colorSecondaryText" />
+            android:id="@+id/textSalon" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textProfesor"
-            android:textColor="@color/colorSecondaryText" />
     </LinearLayout>
 </LinearLayout>

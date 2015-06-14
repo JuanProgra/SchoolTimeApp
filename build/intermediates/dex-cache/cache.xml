@@ -2,172 +2,109 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\me.tatarka.support\jobscheduler\0.1.1\classes.jar"
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-j2se\3.3.0\3bbcf49f06570312e9014946e3f4065d002efad4\ksoap2-j2se-3.3.0.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="8d5fa4ca32cbbd491d4e027d16f02e897dfed0f2">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-95dc57e57a0206375d1b15dd54c2dd2da0e3620e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\net.sourceforge.kxml\kxml\2.2.4\1642506e490548d96984b8370e44257c156097f7\kxml-2.2.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1642506e490548d96984b8370e44257c156097f7">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\kxml-2.2.4-d5b566d688eea271afdefc02269f2216a3771d49.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-fbf3e2df1ddcfdba73eb48248eb9719a455c311d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-65481ad5119bfae969c1b599273c9b86dc178a1d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-9b11366d37ce76abb8f969a4b00396a7371d9228.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-android\3.3.0\ca23af61438cf7e397e51a3df88b1a5b0bc9ea79\ksoap2-android-3.3.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ca23af61438cf7e397e51a3df88b1a5b0bc9ea79">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\ksoap2-android-3.3.0-c3af7c36c9b5cbeb9b1eea01ab7a36585290d148.jar" />
+        revision="22.0.1"
+        sha1="3bbcf49f06570312e9014946e3f4065d002efad4">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\ksoap2-j2se-3.3.0-884d8fb3e0acfc08212b1f769d07fdd76e16a58e.jar" />
     </item>
     <item
         jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\net.sourceforge.kobjects\kobjects-j2me\0.0-SNAPSHOT-20040926-2\9246ca92b16c65114a7fb80b906801e06be95305\kobjects-j2me-0.0-SNAPSHOT-20040926-2.jar"
         jumboMode="false"
-        revision="21.1.2"
+        revision="22.0.1"
         sha1="9246ca92b16c65114a7fb80b906801e06be95305">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\kobjects-j2me-0.0-SNAPSHOT-20040926-2-efe3837d46c4ab28ffc31ecd2ec964310fee90ce.jar" />
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\kobjects-j2me-0.0-SNAPSHOT-20040926-2-efe3837d46c4ab28ffc31ecd2ec964310fee90ce.jar" />
     </item>
     <item
-        jar="C:\Users\Godinez Miranda\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jar="C:\Users\Godinez Miranda\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-911a960a8b39a07d4e6aae0f21e39ed7d2ee51ab.jar" />
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-68cf2e45fde0f4f2fd12a9db56b3042887e8aad2.jar" />
     </item>
     <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-base\3.3.0\6c7e0691f5b602d7db0739c31c59ad74b88f9b2a\ksoap2-base-3.3.0.jar"
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\palette-v7\22.2.0\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="6c7e0691f5b602d7db0739c31c59ad74b88f9b2a">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\ksoap2-base-3.3.0-f3fd3c2b0d813aa68d88e6b333f2bb6441d9c1e8.jar" />
+        revision="22.0.1"
+        sha1="060b30a619b8d3ba053e1d7dc08b3fdf0dd81530">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-6d8a76b82737e4379959b6842d15d17851f85b74.jar" />
     </item>
     <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.pkmmte.view\circularimageview\1.1\classes.jar"
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-ee60e36f3d1eb487d21e75e3a246924e7d0db853.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-d47cd3f139c2088252bd76b064ccb909043d0d39.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-55d9b325891f88ccc3e2e310ed5c79ba5cc7c41b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-44c027b41225f677d8fd5365e04fef5dafe8623d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\org.lucasr.dspec\dspec\0.1.1\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dab41681007f3d86a532a5d90295cc6feb9e258b">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-04f87acc5e3faeffbe724773672362bc45f00f8a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\it.neokree\MaterialTabs\0.11\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fef6aa7ea0bb2d6adf10965d0a5bb8e353517bff">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-4503f95f5b90c1ff3420cceb100d5618097eced9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-c602554890d33ed25d4ffd5a1029b6ab9e93dbaa.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\jp.wasabeef\recyclerview-animators\1.1.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1ee2417303712f2959fc9d726c67881daaf3c054">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-3a713d6898739beebe1099d2b40fda656a3bf576.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-eeb870a1c168c35719085f638096ba82d751af46.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\library-2.4.0-f542370b8160acb6bfd07b094458352dfb30c9ec.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.16\d8f5b9114ebe0f76de7fbf55e950540959ce4ff8\library-1.0.16.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d8f5b9114ebe0f76de7fbf55e950540959ce4ff8">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\library-1.0.16-453c4c61c29412ff804b42d66613d04e6e70ce63.jar" />
-    </item>
-    <item
-        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-j2se\3.3.0\3bbcf49f06570312e9014946e3f4065d002efad4\ksoap2-j2se-3.3.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3bbcf49f06570312e9014946e3f4065d002efad4">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\ksoap2-j2se-3.3.0-884d8fb3e0acfc08212b1f769d07fdd76e16a58e.jar" />
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-8bb31233a89970ad954b05de63e35fa1b0a4abae.jar" />
     </item>
     <item
         jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\org.xmlpull\xmlpull\1.1.3.3\9b62254da05ce6399a09164362da7b2419de63ca\xmlpull-1.1.3.3.jar"
         jumboMode="false"
-        revision="21.1.2"
+        revision="22.0.1"
         sha1="9b62254da05ce6399a09164362da7b2419de63ca">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\xmlpull-1.1.3.3-6d50552a716586687d71a0bc7a1241e315b4471d.jar" />
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\xmlpull-1.1.3.3-6d50552a716586687d71a0bc7a1241e315b4471d.jar" />
     </item>
     <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.telly\mrvector\0.2.0\classes.jar"
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\libs\internal_impl-22.2.0.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="0e9cd6fddebfe1293fe1bf4c0c6b1ac27a8d91a0">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-61391bddb7a9f333674df1015f7617b608ffb225.jar" />
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-45ba4b80df5c6c22fc48403a929cc6dc52d68e01.jar" />
     </item>
     <item
-        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\22.0.0\classes.jar"
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\0.4.0\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="c9e0c6fc22b22b96d0db564cf073ab6f288bb758">
-        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\SchoolTime\SchoolTimeApp\app\build\intermediates\pre-dexed\debug\classes-a538b2fd1039ce54d7272dcf2305336a89a819fe.jar" />
+        revision="22.0.1"
+        sha1="b20ee2f48924414e04e4087a8fa7a45043f11e0c">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-0f34d355050476a970d8e9f95083de44112908a7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-86d026cac1b0323199af14d086db67a82b8922f5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-base\3.3.0\6c7e0691f5b602d7db0739c31c59ad74b88f9b2a\ksoap2-base-3.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6c7e0691f5b602d7db0739c31c59ad74b88f9b2a">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\ksoap2-base-3.3.0-f3fd3c2b0d813aa68d88e6b333f2bb6441d9c1e8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\com.google.code.ksoap2-android\ksoap2-android\3.3.0\ca23af61438cf7e397e51a3df88b1a5b0bc9ea79\ksoap2-android-3.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ca23af61438cf7e397e51a3df88b1a5b0bc9ea79">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\ksoap2-android-3.3.0-c3af7c36c9b5cbeb9b1eea01ab7a36585290d148.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-2092f9f294add24dd385f1be3c1f74886e4d7c04.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-aae105cb7bebd98d34e52cd0961cd76578685a72.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\classes-3f7ff2e491f76d6bae868157d6786c8155a8acc1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Godinez Miranda\.gradle\caches\modules-2\files-2.1\net.sourceforge.kxml\kxml\2.2.4\1642506e490548d96984b8370e44257c156097f7\kxml-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1642506e490548d96984b8370e44257c156097f7">
+        <dex dex="C:\Users\Godinez Miranda\Desktop\Progra\Android\EbusFuentes\appschooltime\app\build\intermediates\pre-dexed\debug\kxml-2.2.4-d5b566d688eea271afdefc02269f2216a3771d49.jar" />
     </item>
 
 </items>

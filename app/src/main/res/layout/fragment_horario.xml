@@ -1,37 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="fragment.HorarioFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kinal.appschooltime.Fragment.HorarioFragment">
 
-    <LinearLayout
-        android:id="@+id/LinearHorario"
-        android:layout_below="@+id/app_bar"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.prolificinteractive.materialcalendarview.sample.CustomizeXmlActivity"
+        >
 
-        <Button
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dia"
-            android:id="@+id/btnDia" />
+            app:mcv_showOtherDates="true"
+            app:mcv_arrowColor="?attr/colorPrimary"
+            app:mcv_selectionColor="?attr/colorPrimary"
+            app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+            app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+            app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium"
+            app:mcv_weekDayLabels="@array/custom_weekdays"
+            app:mcv_monthLabels="@array/custom_months"
+            app:mcv_tileSize="36dp"
+            app:mcv_firstDayOfWeek="sunday"
+            />
 
         <TextView
-            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/textView5" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/colorAccent" />
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listViewT"/>
+            android:id="@+id/listView" />
+
+
     </LinearLayout>
 
 </FrameLayout>
